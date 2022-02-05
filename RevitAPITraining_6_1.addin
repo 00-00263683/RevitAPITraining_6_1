@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>"C:\RevitAPITrainig\RevitAPITraining_6_1.dll"</Assembly>		
+		<AddInId>DB17FA22-171E-4EF1-AC05-081B7C8D4CEF</AddInId>
+		<FullClassName>RevitAPITraining_6_1.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>6-1 Приложение в WPF</Text>
+	</AddIn>
+</RevitAddIns>

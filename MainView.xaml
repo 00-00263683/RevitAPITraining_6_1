@@ -1,0 +1,22 @@
+﻿<Window x:Class="RevitAPITraining_6_1.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPITraining_6_1"
+             mc:Ignorable="d" 
+             Height="200" d:Width="150">
+    <StackPanel>
+        <Label Content="Тип воздуховода"/>
+        <ComboBox ItemsSource="{Binding airTypes}"
+                  SelectedItem="{Binding selectedAirType}"
+                  DisplayMemberPath="Name"/>
+        <Label Content="Уровень воздуховода"/>
+        <ComboBox ItemsSource="{Binding Levels}"
+                  SelectedItem="{Binding selectedLevel}"
+                  DisplayMemberPath="Name"/>
+        <Label Content="Смещение воздуховода"/>
+        <TextBox Text="{Binding AirHeight}"/>
+        <Button Content="Применить" Command="{Binding SaveCommand}"/>
+    </StackPanel>
+</Window>
